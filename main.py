@@ -93,10 +93,10 @@ if __name__ == '__main__':
 
         for file_name in file_names:
             if EXTENSION_REGEX.match(file_name):
-                if AUGMENTED_FILE_REGEX.match(file_name):
-                    counter.skipped_augmented()
-                else:
-                    process(dir_name, file_name, op_lists)
+                # if AUGMENTED_FILE_REGEX.match(file_name):
+                #     counter.skipped_augmented()
+                # else:
+                process(dir_name, file_name, op_lists)
             else:
                 counter.skipped_no_match()
 
